@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Homepage</title>
+    <script src="https://kit.fontawesome.com/8b68951713.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Signika&display=swap');</style>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">Edison Labs SmartBot</div>
+        <div id="chat-messages"></div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+            <div id="send-button-container">
+                <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
